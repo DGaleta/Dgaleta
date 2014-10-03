@@ -1,4 +1,4 @@
-﻿Сборка начата 03.10.2014 15:48:15.
+﻿Сборка начата 03.10.2014 16:29:34.
      1>Проект "c:\Users\Den\documents\visual studio 2013\Projects\imper\imper\imper.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Исходный код.cpp"
@@ -10,4 +10,4 @@
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:03.29
+Затраченное время: 00:00:04.19

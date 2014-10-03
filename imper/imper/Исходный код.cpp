@@ -6,19 +6,31 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int t, i, num[4][4];
-	/* загрузка чисел */
-		for (t = 0; t<3; ++t)
-			for (i = 0; i<4; ++i)
-				num[t][i] = (t * 4) + i + 1;
+	setlocale(0, "");
+	srand(unsigned(time(NULL)));
+	int N, M;
+	cout << "Введите размер матрицы(2а значения): ";
+	cin >> N >> M;
+	int ** A = new int *[N];
+	for (int i = 0; i < N; i++)
+		A[i] = new int[M];
 
-	/* вывод чисел */
-		for (t = 0; t<3; ++t)
-		{
-			for (i = 0; i<4; ++i)
-				printf("%d  ", num[t][i]);
-				printf("\n");
-		}
+	for (int i = 0; i < N; i++)
+	for (int j = 0; j < M; j++)
+		A[i][j] = ((rand() % 10));
+
+
+	cout << "Матрица:" << endl << endl;
+	for (int i = 0; i < N; i++)
+	{
+		for (int j = 0; j < M; j++)
+			cout << A[i][j] << " ";
+		cout << endl;
+	}
+
+	cout << endl;
+	for (int i = 0; i < N; i++)
+		delete[] A[i];
+	delete[] A;
 	system("pause");
-	return 0;
 }
